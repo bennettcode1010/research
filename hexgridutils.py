@@ -1,11 +1,11 @@
 from hexalattice.hexalattice import create_hex_grid
 from math import sqrt
 import random
-from newcorridordata import start, end
+from newcorridordata import start, end, k
 
 random.seed(42)
 
-k=12
+
 
 
 # Define type hubs
@@ -28,7 +28,7 @@ def get_hex_centers(k):
     hex_centers, _ = create_hex_grid(nx=k, ny=k, min_diam=0.2, do_plot=False)
     return hex_centers
 
-centers = get_hex_centers(12)
+centers = get_hex_centers(k)
 cell_coords = {
     i: (float(coord[0]), float(coord[1]))
     for i, coord in enumerate(centers, start=1)}

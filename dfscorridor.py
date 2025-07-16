@@ -30,6 +30,7 @@ class Graph:
     def add_arc(self,i,j):
         if i in self.nodes and j in self.nodes:
             self.nodes[i].neighbors.append(self.nodes[j])
+        
 
 
     def make_graph_from_selected(self,arcs,selected_nodes):

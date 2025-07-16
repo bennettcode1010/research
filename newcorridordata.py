@@ -1,6 +1,6 @@
 
 import random
-import numpy
+
 k=12
 
 NODES = list(range(1,k**2 +1))
