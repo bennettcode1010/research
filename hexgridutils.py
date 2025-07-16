@@ -16,12 +16,14 @@ type_hubs = {
     28: "city",
     61: "forest"
 }
+'''
 amounts_types = {
     "forest":  20,
     "grassland": 20,
     "farmland": 15,
     "city": 9
 }
+''' 
 
 
 def get_hex_centers(k):
